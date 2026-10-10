@@ -11,4 +11,8 @@ r = float(input('圆的半径'))
 C = 2*math.pi*r
 s = math.pi*(r**2)
 print(f'该原的周长是{C:.2f},面积是{s:.2f}')
+#判断闰年
+year = int(input('请输入年份:')
+result = year%4 == 0 and year%100 != 0 or year%400 == 0
+print(result)
 
