@@ -6,7 +6,7 @@ F = Fahrenheit = float(input('当前华氏度是：'))
 c = (F-32)/1.8
 print(f'当前华氏度是{F},摄氏度是{c:.1f}')
 #输入一个圆的半径（$\small{r}$），计算出它的周长和面积
-import math
+import math                             #代码中的import math表示导入math模块，导入该模块以后，才能用math.pi得到圆周率的值。
 r = float(input('圆的半径'))
 C = 2*math.pi*r
 s = math.pi*(r**2)
