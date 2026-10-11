@@ -16,3 +16,15 @@ year = int(input('请输入年份:')
 result = year%4 == 0 and year%100 != 0 or year%400 == 0
 print(result)
 
+#写一个程序，找出所有能被7整除但不是5的倍数的数字，范围在2000到3200之间（两者都包括在内）。 获得的数字应以逗号分隔的顺序在单行印刷。
+for i in range(2000,3201):
+  if i%7 == 0 and i%5 != 0 :
+    print (i, end=',')
+
+# 编写一个程序，能够计算给定数值的阶乘。 结果应以逗号分隔的顺序单行打印。 假设向程序提供了以下输入： 8 那么，输出应为： 40320
+q1 = int(input('请输入数字:'))
+result = 1
+for i in range(1,q1+1) :  
+  result = result*i
+print(result)
+
