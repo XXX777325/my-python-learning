@@ -56,7 +56,32 @@ num = int(input('请输入数字')
 for i in range(0,num+1) :
     if all(i%j!= 0 for J in range(2,i)):
         print(i)
+#埃拉托斯特尼筛法（找"范围内所有素数"最快）
+num = int(input('请输入数字'))
+is_prime = [True] * (num + 1)
+is_prime[0] = is_prime[1] = False
 
+for i in range(2, int(num ** 0.5) + 1):
+    if is_prime[i]:
+        for j in range(i * i, num + 1, i):
+            is_prime[j] = False
+
+for i in range(2, num + 1):
+    if is_prime[i]:
+        print(i)
+输出斐波那契数列中的前 20 个数
+a = 1 
+b = 1
+print(a)
+print(b)
+for i in range(0,19) :
+    if a<=b:
+        a = a+b
+        print(a)
+    else :
+        b = a+b
+        print(b)
+    
     
 
 
