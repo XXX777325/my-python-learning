@@ -50,6 +50,13 @@ class transform :
 tran = transform()
 tran.getString()
 tran.printString()
+
+#素数指的是只能被 1 和自身整除的正整数（不包括 1），之前我们写过判断素数的代码，这里相当于是一个升级版本。
+num = int(input('请输入数字')
+for i in range(0,num+1) :
+    if all(i%j!= 0 for J in range(2,i)):
+        print(i)
+
     
 
 
