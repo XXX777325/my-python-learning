@@ -81,7 +81,14 @@ for i in range(0,19) :
     else :
         b = a+b
         print(b)
-    
+    #编写一个程序，按照给定公式计算并打印该值： Q = [（2 * C * D）/H] 的平方根 以下是C和H的固定值： C是50。H是30岁。 D 是应以逗号分隔序列输入程序的变量。 示例 假设程序给出以下逗号分隔的输入序列： 100,150,180 程序输出应为： 18,22,24
+num = input("请输入逗号分隔的输入序列：")
+num = num.split(",")
+num1 = []
+for i in num:
+    i = int(i)
+    num1.append(int(((2 * 50 * i) / 30)**0.5))
+print(",".join(map(str,num1)))
     
 
 
