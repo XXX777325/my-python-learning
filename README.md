@@ -91,6 +91,14 @@ for i in num:
 print(",".join(map(str,num1)))
     
 
+在开始本节课的内容之前，我们先给大家一个编程任务，将一颗色子掷 6000 次，统计每种点数出现的次数。这个任务对大家来说应该是非常简单的，我们可以用 1 到 6 均匀分布的随机数来模拟掷色子，然后用 6 个变量分别记录每个点数出现的次数
+import random
+counts = [0]*7
+for i in range(1,6001):
+    point = random.randint(1,6)
+    counts[point] +=1
+for i in range(1,7):
+    print(f'{i}出现{counts[i]}次')
 
 
 
