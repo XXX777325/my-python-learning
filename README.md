@@ -100,6 +100,29 @@ for i in range(1,6001):
 for i in range(1,7):
     print(f'{i}出现{counts[i]}次')
 
+'''以下是10名年龄段学生的名单：
+ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+整理列表，找到最小和最大年龄
+再把最小年龄和最大年龄加到列表里
+找出中位年龄（一个中间项目或两个中间项目除以二）
+求平均年龄（所有物品的总和除以数量）
+找出年龄范围（最大减去最小值）
+比较（最小值 - 平均值）和（最大值 - 平均值）的值，使用 abs（） 方法。'''
+ages.sort()
+list= [ages[0],ages[-1]]
+print(list)
+print(ages[5]+ages[6]/2)
+num = 0
+for i in ages:
+    num += ages[i]
+print(num/len(ages))
+print(ages[-1]-ages[0])
+num1 = abs(ages[0]-num/len(ages))
+num2 = abs(ages[-1]-num/len(ages))
+if num1>num2:
+    print("最小年龄与平均年龄的差值较大")
+else:
+    print("最大年龄与平均年龄的差值较大")
 
 
 
